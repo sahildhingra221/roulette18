@@ -134,7 +134,7 @@ body {
 }
 
 
-/* mein profile page */
+/* elemental */
 
 /* header elemental */
 
@@ -204,6 +204,63 @@ body {
 
 
 
+/* mein profile page */
+
+/* profile section */
+.profile-section {
+  width: 100%;
+}
+
+.profile-section-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding:110px 0;
+}
+
+.profile-section-image-upload{
+  width: 50%;
+  text-align: right;
+}
+
+.profile-section-image-wrapper{
+  text-align: right;
+  position: relative;
+  height: 300px;
+}
+
+.profile-section-image-display-bg {
+  height: 300px;
+  width: 240px;
+  position: absolute;
+  right: 50px;
+  background: grey;
+}
+
+.profile-section-image-display{
+  height: 300px;
+  width: 240px;
+  position: absolute;
+  right: 50px;
+  transform: rotate(-2.5deg);
+  overflow: hidden;
+}
+
+.profile-section-image-display img:nth-child(2){
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(90px);
+}
+
+.profile-section-upload-icon-wrapper{
+  position: absolute;
+  z-index: 1;
+  height: 50px;
+}
+
+.profile-section-info {
+  width: 50%;
+}
 
 
 
