@@ -60,7 +60,7 @@ body {
 
 .hero-section {
   max-width: 1280px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .hero-section-wrapper {
@@ -71,10 +71,10 @@ body {
   padding-top: 15%;
 }
 
-.hero-section-title{
+.hero-section-title {
   letter-spacing: 3px;
   font-size: 18px;
-  opacity:0.85;
+  opacity: 0.85;
 }
 
 .hero-section-info-line {
@@ -83,22 +83,23 @@ body {
   line-height: 70px;
 }
 
-.info-line-letter1, .info-line-letter3 {
+.info-line-letter1,
+.info-line-letter3 {
   border-bottom: 2px solid white;
-  opacity:0.85;
+  opacity: 0.85;
 }
 
 .info-line-letter2 {
   font-size: 30px;
-  opacity:0.85;
+  opacity: 0.85;
 }
 
-.hero-section-regbtn{
+.hero-section-regbtn {
   padding-top: 5px;
 }
 
-.hero-section-regbtn a{
-  background: rgba(80,226,102,0.9);
+.hero-section-regbtn a {
+  background: rgba(80, 226, 102, 0.9);
   color: white;
   letter-spacing: 3px;
   font-size: 16px;
@@ -111,7 +112,7 @@ body {
 
 /* footer landing page*/
 
-.hero-footer{
+.hero-footer {
   text-align: center;
   color: white;
   letter-spacing: 3px;
@@ -122,15 +123,86 @@ body {
   bottom: 50px;
   right: 0;
   left: 0;
-  
+
 }
 
 .hero-footer-wrapper span {
   border-bottom: 1px solid;
   display: inline-block;
   padding: 5px 50px;
-  
+
 }
+
+
+/* mein profile page */
+
+/* header elemental */
+
+.c-header{
+  height: 60px;
+  width: 100%;
+  background-color: #E2D8D9;
+}
+
+.c-header-wrapper {
+  max-width: 1280px;
+  height: 100%;
+  display: -webkit-box;
+  margin: 0 auto;
+}
+
+.c-header-logo-title{
+  width:33%;
+}
+
+.c-header-logo-title span{
+  //color: #C3B4B6;
+  color: grey;
+  display: inline-block;
+  padding: 18px 0;
+  letter-spacing: 2.5px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.c-header-logo{
+  width:33%;
+  text-align: center;
+}
+
+.c-header-logo img {
+  height: 100px;
+  margin-top: 18px;
+  border: 10px solid white;
+  border-radius: 70px 70px 0 0;
+}
+
+.c-header-nav {
+  width:33%;
+}
+
+.c-header-nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-top: 2.5px;
+}
+
+.c-header-nav ul li a{
+  color: grey;
+  text-decoration: none;
+  padding:25px 15px;
+  transition: 0.03s ease-in;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.c-header-nav ul li a:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+
 
 
 
