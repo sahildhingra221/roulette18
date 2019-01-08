@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+/* header landing page */
+
+.hero-header {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(226, 216, 217, 0.7);
+}
+
+.hero-header-wrapper {
+  max-width: 1280px;
+  height: 100%;
+  display: -webkit-box;
+  margin: 0 auto;
+}
+
+.hero-header-blank-left {
+  width: 33%;
+}
+
+.hero-header-logo {
+  width: 33%;
+  text-align: center;
+}
+
+.hero-header-logo img {
+  height: 100px;
+  margin-top: 28px;
+}
+
+.hero-header-nav {
+  width: 33%;
+  text-align: right;
+}
+
+.hero-header-nav a{
+  padding:10px 30px;
+  display: inline-block;
+  background: white;
+  border-radius: 6px;
+  color: grey;
+  text-decoration: none;
+  transition: 0.05s ease-in;
+  margin-top: 7.5px;
+  border:1px solid grey;
+  font-weight: 300;
+  font-size: 18px;
+}
+.hero-header-nav a:hover{
+  color: black;
+}
+
