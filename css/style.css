@@ -246,7 +246,7 @@ body {
   transform: rotate(-2.5deg);
 }
 
-.profile-section-image-display img:nth-child(2){
+.profile-section-image-display img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -254,16 +254,15 @@ body {
 }
 
 .profile-section-upload-icon-wrapper{
-  position: relative;
+  position: absolute;
   z-index: 1;
   width: 80px;
-  transform: rotate(2.5deg);
+  right: 130px;
+  top: 115px;
 }
 
 .profile-section-upload-icon-wrapper img{
   width: 100%;
-  position: absolute;
-  top: 110px;
 }
 
 .profile-section-image-upload-btn input{
