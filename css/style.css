@@ -197,6 +197,10 @@ body {
   font-weight: 300;
 }
 
+.c-header-nav ul li:nth-child(1) a {
+  padding-left: 0;
+}
+
 .c-header-nav ul li a:hover{
   text-decoration: underline;
   color: black;
