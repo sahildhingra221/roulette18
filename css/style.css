@@ -66,6 +66,9 @@ body {
 .hero-section-wrapper {
   color: white;
   font-weight: bold;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 15%;
 }
 
 .hero-section-title{
@@ -75,8 +78,9 @@ body {
 }
 
 .hero-section-info-line {
-  font-size: 40px;
-  letter-spacing: 5px;
+  font-size: 60px;
+  letter-spacing: 10px;
+  line-height: 70px;
 }
 
 .info-line-letter1, .info-line-letter3 {
@@ -85,9 +89,49 @@ body {
 }
 
 .info-line-letter2 {
-  font-size: 20px;
+  font-size: 30px;
   opacity:0.85;
 }
+
+.hero-section-regbtn{
+  padding-top: 5px;
+}
+
+.hero-section-regbtn a{
+  background: rgba(80,226,102,0.9);
+  color: white;
+  letter-spacing: 3px;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 18px 28px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-left: 112px;
+}
+
+/* footer landing page*/
+
+.hero-footer{
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  left: 0;
+  
+}
+
+.hero-footer-wrapper span {
+  border-bottom: 1px solid;
+  display: inline-block;
+  padding: 5px 50px;
+  
+}
+
 
 
 
