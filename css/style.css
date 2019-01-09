@@ -533,6 +533,160 @@ body {
   font-weight: 300;
 }
 
+/* payment page */
+.payment-section{
+  width: 100%;
+  margin-top: 120px;
+}
+
+.payment-section-wrapper{
+  max-width: 1050px;
+  margin:0 auto;
+}
+
+.payment-section-tagline{
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 300;
+  line-height: 30px;
+  color: grey;
+}
+
+.payment-section-tagline a{
+  color:orange;
+  text-decoration: none;
+}
+
+.payment-section-tagline a:hover{
+  text-decoration: underline;
+}
+
+.payment-section-packages{
+  margin-top: 100px;
+}
+
+.payment-section-packages-title {
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.payment-section-packages-option{
+  display: -webkit-box;
+  margin-top: 25px;
+}
+
+.package-display{
+  background: #E2D8D9;
+  padding:20px 35px 10px;
+  position: relative;
+}
+.package-name{
+  text-align: center;
+  letter-spacing: 2.5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.package-specifications{
+  color: grey;
+  font-weight: 300;
+  line-height: 32px;
+  font-size: 18px;
+  letter-spacing: 2.5px;
+  margin-top: 30px;
+}
+.packages-hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 1em 0;
+  padding: 0; 
+  margin: 20px 0;
+}
+.package-price{
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  opacity: 0.9;
+}
+.has-margin{
+  margin-left: 35px;
+}
+.package-display-popular-tag{
+  position: absolute;
+  right: -55px;
+  top: -45px;
+  background:#5EDCB7;
+  color: white;
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 16px;
+}
+.package-display-popular-tag p{
+  padding: 35px 0;
+}
+
+.payment-section-payment-options{
+  margin-top: 65px;
+}
+
+.payment-options-tagline{
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.payment-options-links{
+  display: -webkit-box;
+}
+
+.payment-options-links .payment-op:nth-child(2) {
+  margin:0 30px;
+}
+
+.payment-options-links .payment-op:nth-child(3) {
+  margin-right: 30px;
+}
+.payment-options-links .payment-op:nth-child(4) img{
+  margin-top: 15px;
+}
+
+.payment-op{
+  max-width: 240px;
+  background: #E2D8D9;
+  text-align: center;
+  padding:15px 0;
+  border-radius: 5px;
+}
+.payment-op img{
+  width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
