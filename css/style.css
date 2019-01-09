@@ -449,10 +449,12 @@ body {
   background: transparent;
 }
 .find-result-op-options button:nth-child(1){
+  position: absolute;
 }
 .find-result-op-options button:nth-child(2) {
   margin-top: -10px;
   padding:0 10px;
+  margin-left: 72px;
 }
 .find-result-op-options button:nth-child(3) {
   float: right;
