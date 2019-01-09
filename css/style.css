@@ -123,7 +123,6 @@ body {
   bottom: 50px;
   right: 0;
   left: 0;
-
 }
 
 .hero-footer-wrapper span {
@@ -210,8 +209,10 @@ body {
 
 .c-footer {
   width: 100%;
+  margin-top: 100px;
   padding: 0 0 10px;
   text-align: center;
+  border-top: 0.5px solid grey;
 }
 
 .c-footer-nav ul li {
