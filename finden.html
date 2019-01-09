@@ -76,7 +76,8 @@
                 <img src="media/profile.jpg" alt="">
               </div>
               <form action="#" method="post" class="chatform">
-                <textarea name="chatmessage" placeholder="Schreib etwas nettes..."></textarea><br>
+                <textarea name="chatmessage" id="word_count" placeholder="Schreib etwas nettes..."></textarea><br>
+                <div class="chatmessage-count"><span id="display_count">0</span>/250</div>
                 <input type="submit" value="SENDEN">
               </form>
             </div>
@@ -111,7 +112,8 @@
                 <img src="media/profile2.jpg" alt="">
               </div>
               <form action="#" method="post" class="chatform">
-                <textarea name="chatmessage" placeholder="Schreib etwas nettes..."></textarea><br>
+                <textarea name="chatmessage" id="word_count2" placeholder="Schreib etwas nettes..."></textarea><br>
+                <div class="chatmessage-count"><span id="display_count2">0</span>/250</div>
                 <input type="submit" value="SENDEN">
               </form>
             </div>
@@ -146,7 +148,8 @@
                 <img src="media/profile3.jpg" alt="">
               </div>
               <form action="#" method="post" class="chatform">
-                <textarea name="chatmessage" placeholder="Schreib etwas nettes..."></textarea><br>
+                <textarea name="chatmessage" id="word_count3" placeholder="Schreib etwas nettes..."></textarea><br>
+                <div class="chatmessage-count"><span id="display_count3">0</span>/250</div>
                 <input type="submit" value="SENDEN">
               </form>
             </div>
@@ -159,6 +162,53 @@
       </div>
     </div>
   </section>
+  <script>
+    $(document).ready(function() {
+    $("#word_count").on('keyup', function() {
+        var words = this.value.match(/\S+/g).length;
+        if (words > 200) {
+            // Split the string on first 200 words and rejoin on spaces
+            var trimmed = $(this).val().split(/\s+/, 200).join(" ");
+            // Add a space at the end to keep new typing making new words
+            $(this).val(trimmed + " ");
+        }
+        else {
+            $('#display_count').text(words);
+            $('#word_left').text(200-words);
+        }
+    });
+ }); 
+    $(document).ready(function() {
+    $("#word_count2").on('keyup', function() {
+        var words = this.value.match(/\S+/g).length;
+        if (words > 200) {
+            // Split the string on first 200 words and rejoin on spaces
+            var trimmed = $(this).val().split(/\s+/, 200).join(" ");
+            // Add a space at the end to keep new typing making new words
+            $(this).val(trimmed + " ");
+        }
+        else {
+            $('#display_count2').text(words);
+            $('#word_left').text(200-words);
+        }
+    });
+ }); 
+    $(document).ready(function() {
+    $("#word_count3").on('keyup', function() {
+        var words = this.value.match(/\S+/g).length;
+        if (words > 200) {
+            // Split the string on first 200 words and rejoin on spaces
+            var trimmed = $(this).val().split(/\s+/, 200).join(" ");
+            // Add a space at the end to keep new typing making new words
+            $(this).val(trimmed + " ");
+        }
+        else {
+            $('#display_count3').text(words);
+            $('#word_left').text(200-words);
+        }
+    });
+ }); 
+  </script>
   <script>
       $(document).ready(function() {
     $(".scroll").click(function(event){

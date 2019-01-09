@@ -480,13 +480,11 @@ body {
   max-width: 350px!important;
   box-shadow: none!important;
   padding-top:65px!important;
-  padding-bottom:35px!important;
-  //z-index:100!important;
 }
 .showchat textarea{
   width: 100%;
   resize: none;
-  height: 190px;
+  height: 150px;
   color: red!important;
   font-size: 16px;
   line-height: 23px;
@@ -500,9 +498,14 @@ body {
   line-height: 23px;
   letter-spacing: 1.2px;
 }
-
+.chatmessage-count{
+  text-align: right;
+  margin-bottom: 20px;
+  color: grey;
+  font-weight: 300;
+}
 .showchat input[type=submit] {
-  width: 100%;
+  width: 80%;
   background:#FECF5D;
   outline: none;
   border:none;
@@ -512,6 +515,8 @@ body {
   font-size: 18px;
   border-radius: 7px;
   letter-spacing: 3px;
+  display: block;
+  margin: 0 auto;
 }
 .showchat-profile-img{
   height: 90px;
