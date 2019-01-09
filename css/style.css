@@ -475,9 +475,63 @@ body {
   margin-top: 65px;
 }
 
+/* contact page */
+.contact-section{
+  width: 100%;
+  padding-top: 150px;
+}
 
+.contact-section-wrapper{
+  max-width: 320px;
+  margin:0 auto;
+}
 
+.contact-section-tagline{
+  font-size: 20px;
+  color: grey;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 2.9px;
+  text-align: justify;
+}
 
+.contact-section-form {
+  //max-width: 320px;
+  margin-top: 32px;
+}
+
+.contact-section-form  form input[type=email]{
+  width: 300px;
+  padding:10px;
+  color: grey;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.contact-section-form  form textarea{
+  width: 300px;
+  padding:10px;
+  color: grey;
+  font-size: 18px;
+  font-weight: 300;
+  height: 140px;
+  resize: none;
+  margin:14px 0 9px;
+}
+
+.contact-section-form  form input[type=submit]{
+  width: 100%;
+  padding:20px 0;
+  color: grey;
+  font-size: 18px;
+  font-weight: 300;
+  background: #F5E069;
+  color: black;
+  border:0.5px solid grey;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
 
 
 
