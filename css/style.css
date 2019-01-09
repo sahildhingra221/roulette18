@@ -382,7 +382,6 @@ body {
 .find-result-wrapper{
   max-width: 330px;
   height: 450px;
-  border:1px solid;
   margin:0 auto;
   overflow-y: hidden;
   overflow-x: hidden;
