@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400">
   <link rel="icon" href="media/r_logo.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body>
@@ -62,11 +66,16 @@
               <img src="media/next.PNG" class="scroll" alt="next">
             </button>
             <button class="chat">
-              <img src="media/chat.PNG" alt="chat">
+              <a href="#ex1" rel="modal:open"><img src="media/chat.PNG" alt="chat"></a>
             </button>
             <button class="like">
               <img src="media/like.PNG" alt="like">
             </button>
+            <div id="ex1" class="modal">
+              <p>Thanks for clicking. That felt good. 1</p>
+              <a href="#" rel="modal:close">Close</a>
+            </div>
+
           </div>
           <div class="find-result-op-info">
             <span>Annkristin, 19</span>
@@ -87,11 +96,16 @@
               <img src="media/next.PNG" class="scroll" alt="next">
             </button>
             <button class="chat">
-              <img src="media/chat.PNG" alt="chat">
+              <a href="#ex1" rel="modal:open"><img src="media/chat.PNG" alt="chat"></a>
             </button>
             <button class="like">
               <img src="media/like.PNG" alt="like">
             </button>
+            <div id="ex1" class="modal">
+              <p>Thanks for clicking. That felt good. 2</p>
+              <a href="#" rel="modal:close">Close</a>
+            </div>
+            
           </div>
           <div class="find-result-op-info">
             <span>Julie, 21</span>
