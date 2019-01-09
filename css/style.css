@@ -418,7 +418,7 @@ body {
 
 .find-result-op-likes{
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   top: 22px;
   left: 28px;
   background: rgba(0,0,0,0.8);
@@ -476,7 +476,56 @@ body {
   opacity: 0.9;
   margin-top: 65px;
 }
+.showchat{
+  max-width: 350px!important;
+  box-shadow: none!important;
+  padding-top:65px!important;
+  padding-bottom:35px!important;
+  //z-index:100!important;
+}
+.showchat textarea{
+  width: 100%;
+  resize: none;
+  height: 190px;
+  color: red!important;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 1.2px;
+  border:0;
+  outline: none;
+}
+.showchat textarea::-webkit-input-placeholder{
+  color:grey;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 1.2px;
+}
 
+.showchat input[type=submit] {
+  width: 100%;
+  background:#FECF5D;
+  outline: none;
+  border:none;
+  color: white;
+  padding:30px 0;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 7px;
+  letter-spacing: 3px;
+}
+.showchat-profile-img{
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  left: 36%;
+  top: -45px;
+}
+.showchat-profile-img img{
+  border-radius: 150px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* contact page */
 .contact-section{
   width: 100%;
