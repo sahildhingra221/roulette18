@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400">
   <link rel="icon" href="media/r_logo.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body style="background-image: url(media/couple-love-bedroom-kissing.jpg); background-repeat: no-repeat; background-size: cover; ">
@@ -21,33 +26,129 @@
         <img src="media/r_logo.png" alt="Company Logo">
       </div>
       <div class="hero-header-nav">
-        <a href="#">Einloggen</a>
+        <a href="#ex1" rel="modal:open">Einloggen</a>
+      </div>
+      <div id="ex1" class="modal showloginform">
+      <!-- tab buttons -->
+        <div class="tabbuttons">
+          <div class="buttoncontainer">
+            <button onclick="showPanel(0)">Login</button>
+            <button onclick="showPanel(1)">Registrieren</button>
+          </div>
+        </div>
+        <div class="tabpanel panel-login">
+          <form action="#" class="login-form">
+            
+            <div class="login-form-input">
+              <div class="login-form-input-icon">
+                <img src="media/email.png" alt="e">
+              </div>
+              <div class="login-form-input-box">
+                <input type="email" placeholder="E-Mail Adresse">
+              </div>
+            </div>
+            
+            <div class="login-form-input has-margin-top">
+              <div class="login-form-input-icon">
+                <img src="media/password.png" alt="e">
+              </div>
+              <div class="login-form-input-box">
+                <input type="password" placeholder="Passwort">
+              </div>
+            </div>
+            <div class="login-form-forget-password">
+              <a href="#">Passwort vergessen?</a>
+            </div>
+            <div class="login-form-logged-in">
+              <div class="login-form-remember-me">
+                <input type="checkbox" id="rememberme">
+                <label class="is-uncopy" for="rememberme">Login speichern</label>
+              </div>
+              <div class="login-form-login-btn">
+                <input type="submit" value="Login">
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <div class="tabpanel panel-registration">
+          <div class="panel-registration-tagline">
+            Um kostenlose Anzeigen erstellen zu können, registrieren Sie sich bitte
+          </div>
+          <div class="panel-registration-tagline panel-registration-tagline2">
+            Finden Sie heraus, <b>warum Sie sich registrieren sollten.</b>
+          </div>
+          <form action="#" class="registration-form">
+           
+            <div class="registration-form-input has-margin-top">
+              <div class="registration-form-input-icon">
+                <img src="media/email.png" alt="e">
+              </div>
+              <div class="registration-form-input-box">
+                <input type="email" placeholder="E-Mail Adresse">
+              </div>
+            </div>
+            
+            <div class="login-form-input has-margin-top">
+              <div class="login-form-input-icon">
+                <img src="media/password.png" alt="e">
+              </div>
+              <div class="login-form-input-box">
+                <input type="password" placeholder="Passwort">
+              </div>
+            </div>
+            
+            <div class="login-form-input has-margin-top">
+              <div class="login-form-input-icon">
+                <img src="media/password.png" alt="e">
+              </div>
+              <div class="login-form-input-box">
+                <input type="password" placeholder="passwort Bestätigung">
+              </div>
+            </div>
+            
+            <div class="registration-info">
+              Durch die Registrierung und die Nutzung unserer Webseite bestätigen Sie, dass Sie die <b>AGB</b> & <b>privacy conditions</b> gelesen haben und diese akzeptieren.<br><br>
+              <input type="checkbox" id="tnc">
+              <label class="is-uncopy" for="tnc" style="font-weight:bold">
+                Ich akzeptiere die AGB
+              </label><br><br>
+              <input type="checkbox" id="pp">
+              <label class="is-uncopy" for="pp" style="font-weight:bold">
+                Ich akzeptiere die Datenschutzerklärung
+              </label>
+            </div>
+            <div class="registration-btn">
+              <input type="submit" value="Registrieren">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </header>
  <!-- header section -->
   <section class="hero-section">
     <div class="hero-section-wrapper">
-      <div class="hero-section-title animated bounceInDown">
+      <div class="hero-section-title">
         roulette18.de
       </div>
-      <div class="hero-section-info-line animated rollIn">
+      <div class="hero-section-info-line">
         <span class="info-line-letter1">EINFACH</span> <br> <span class="info-line-letter2">UND</span> <span class="info-line-letter3">SCHNELL</span>
       </div>
       <div class="hero-section-regbtn">
-        <a class="animated tada infinite" href="mein_profil.html">KOSTLENLOS REGISTRIEREN</a>
+        <a href="#ex1" rel="modal:open" class="animated tada infinite" href="mein_profil.html">KOSTLENLOS REGISTRIEREN</a>
       </div>
     </div>
    <!-- footer landing page -->
     <footer class="hero-footer">
       <div class="hero-footer-wrapper">
-        <span class="animated bounceInDown">
+        <span>
           Mit roulette18 wird Chatten einfacher.
         </span>
       </div>
     </footer>
   </section>
-  
+  <script src="js/tabswitch.js"></script>
 </body>
 
 </html>
