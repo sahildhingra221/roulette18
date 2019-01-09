@@ -670,17 +670,41 @@ body {
   width: 70%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* mailbox section */
+.mailbox-section{
+  width: 100%;
+  margin-top: 125px;
+  text-align: center;
+}
+.mailbox-section-wrapper{
+  max-width: 750px;
+  margin:0 auto;
+}
+.mailbox-section-title{
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  opacity: 0.85;
+}
+.mailbox-section-tagline{
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  line-height: 35px;
+  margin:10px 0;
+  color: grey;
+}
+.mailbox-section-start-btn a{
+  padding:30px 50px;
+  display: inline-block;
+  background:#F5E069;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight:bold;
+  margin-top: 15px;
+  border:0.5px solid grey;
+}
 
 
 
