@@ -558,6 +558,7 @@ body {
 .footer{
   width: 100%;
   color: white;
+  margin-top: 70px;
 }
 .footer-main{
   background: #212121;
