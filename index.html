@@ -151,8 +151,6 @@
   <script src="js/tabswitch.js"></script>
   <script>
 var i = 0;
-var k = 0;
-var j = 0;
 var txt = 'EINFACH UND SCHNELL';
 var txta = 'EINFACH';
 var txtb = 'UND';
@@ -162,16 +160,10 @@ var speed = 100;
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("txta").innerHTML += txta.charAt(i);
+    document.getElementById("txtb").innerHTML += txtb.charAt(i);
+    document.getElementById("txtc").innerHTML += txtc.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
-  }
-  if (k < txtb.length) {
-    document.getElementById("txtb").innerHTML += txtb.charAt(k);
-    k++;
-  }
-  if (j < txtc.length) {
-    document.getElementById("txtc").innerHTML += txtc.charAt(j);
-    j++;
   }
 }
 </script>
