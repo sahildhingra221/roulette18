@@ -53,9 +53,25 @@
                 <img src="media/password.png" alt="e">
               </div>
               <div class="login-form-input-box">
-                <input type="password" placeholder="Passwort">
+                <input id="lpass" onkeyup="lenoughchar();" type="password" placeholder="Passwort">
               </div>
             </div>
+            
+            <span id="lerrorchar" class="errorpass"></span>
+            
+            <script>
+              function lenoughchar() {
+                var lpass = document.getElementById('lpass').value;
+                if(lpass.length < 6) {
+                  document.getElementById('lerrorchar').style.display = 'block';
+                  var errorchar = 'Please enter at least 6 characters.';
+                  document.getElementById('lerrorchar').innerHTML = errorchar;
+                } else {
+                  document.getElementById('lerrorchar').style.display = 'none';
+                }
+              }
+            </script>
+            
             <div class="login-form-forget-password">
               <a href="#">Passwort vergessen?</a>
             </div>
@@ -85,7 +101,7 @@
                 <img src="media/email.png" alt="e">
               </div>
               <div class="registration-form-input-box">
-                <input id="emailid" onkeyup="checkemail();" type="text" placeholder="E-Mail Adresse">
+                <input id="emailid" onkeyup="checkemail();" type="email" placeholder="E-Mail Adresse">
               </div>
             </div>
             
@@ -110,7 +126,7 @@
                 <img src="media/username.png" alt="e">
               </div>
               <div class="registration-form-input-box">
-                <input type="email" placeholder="Nutzername">
+                <input type="text" placeholder="Nutzername">
               </div>
             </div>
             
