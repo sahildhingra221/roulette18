@@ -388,6 +388,15 @@ body {
   color: #d13248;
 }
 
+.succreg{
+  border-left: 3.5px solid #549E17;
+  display: block;
+  background: #F4F4F4;
+  font-size: 19px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
 
 
 

@@ -107,6 +107,9 @@
         </div>
         
         <div class="tabpanel panel-registration">
+          
+          <span id="successregistration" class="succreg"></span>
+          
           <div class="panel-registration-tagline">
             Um kostenlose Anzeigen erstellen zu können, registrieren Sie sich bitte
           </div>
@@ -283,8 +286,16 @@
               </label>
             </div>
             <div class="registration-btn">
-              <input type="submit" value="Registrieren">
+              <input onclick="validateregistration();" type="button" value="Registrieren">
             </div>
+            
+            <script>
+              function validateregistration() {
+                document.getElementById('successregistration').style.padding = '10px';
+                document.getElementById('successregistration').innerHTML = 'Hurray! Your account was successfully created. We have sent you an e-mail to confirm your account.';
+              }
+            </script>
+            
           </form>
         </div>
       </div>
