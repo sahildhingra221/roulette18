@@ -312,23 +312,28 @@
                 if(newpass.length != 0 && repass.length != 0 && usrnm.length != 0) {
                 if(newpass.length < 6) {
                   document.getElementById('successregistration').style.padding = '10px';
+                  document.getElementById('successregistration').style.borderLeft = '3.5px solid red';
                   document.getElementById('successregistration').innerHTML = 'Please correct the highlighted errors!';
                 } else if(repass.length < 6) {
                   document.getElementById('successregistration').style.padding = '10px';
                   document.getElementById('successregistration').innerHTML = 'Please correct the highlighted errors!';
+                  document.getElementById('successregistration').style.borderLeft = '3.5px solid red';
                 } else if(newpass != repass) {
                   document.getElementById('successregistration').style.padding = '10px';
                   document.getElementById('successregistration').innerHTML = 'Please correct the highlighted errors!';
+                  document.getElementById('successregistration').style.borderLeft = '3.5px solid red';
                 } else if(format.test(lemail)) {
                   document.getElementById('successregistration').style.padding = '10px';
                   document.getElementById('successregistration').innerHTML = 'Please correct the highlighted errors!';
+                  document.getElementById('successregistration').style.borderLeft = '3.5px solid red';
                 } else {
                   document.getElementById('successregistration').style.padding = '10px';
-                  document.getElementById('successregistration').innerHTML = 'Hurray! Your account was successfully created. We have sent you an e-mail to confirm your account.';
+                  document.getElementById('successregistration').innerHTML = 'Hurray! Your account was successfully created. We have sent you an e-mail to confirm your account.';document.getElementById('successregistration').style.borderLeft = '3.5px solid #549E17';
                 }
                 } else {
                   document.getElementById('successregistration').style.padding = '10px';
                   document.getElementById('successregistration').innerHTML = 'Please fill all the fields';
+                  document.getElementById('successregistration').style.borderLeft = '3.5px solid red';
                 }
               }
             </script>
