@@ -553,6 +553,151 @@ body {
   text-decoration: underline;
 }
 
+/* footer another */
+
+.footer{
+  width: 100%;
+  color: white;
+}
+.footer-main{
+  background: #212121;
+}
+.footer-main-wrapper{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  padding: 50px 0;
+}
+.footer-main-grid{
+  width: 25%;
+  padding: 0 30px;
+}
+.footer-main-logo{
+  width: 100%;
+}
+.footer-main-logo img{
+  width: 20%;
+}
+.footer-main-cinfo p{
+  font-size:17px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.footer-main-nav{
+  border-left: 2.5px solid #D13248;
+  width: 20%;
+}
+.footer-main-nav:last-child{
+  padding-right: 0;
+}
+.footer-main-nav-list-wrap{
+  list-style: none;
+}
+.footer-main-nav h1{
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 2.2px;
+}
+.footer-main-nav-list-wrap li {
+  display: block;
+  margin-left: -40px;
+}
+.footer-main-nav-list-wrap li a{
+  color: #9AA7A7;
+  text-decoration: none;
+  line-height: 36px;
+  font-size: 17px;
+  display: block;
+  letter-spacing: 1.2px;
+}
+.footer-main-nav-list-wrap li a:hover{
+  text-decoration: underline;
+}
+.right-arrow{
+  background-image: url(../media/arrow-right.png);
+  height: 17px;
+  width: 17px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  margin-right: 5px;
+  float: left;
+  margin-top: 10px;
+}
+
+.footer-another{
+  background: #D13248;
+}
+.footer-another-wrapper{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+.footer-another-element1 ul{
+  margin-left: -45px;
+}
+.footer-another-navlist-wrap li{
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1.1px;
+}
+.footer-another-navlist-wrap li a{
+  color: white;
+  text-decoration: none;
+}
+.footer-another-navlist-wrap li a:hover {
+  text-decoration: underline;
+}
+.footer-another-navlist-wrap li:nth-child(2n){
+  margin:0 20px;
+  opacity: 0.6;
+}
+
+.footer-another-element2{
+  position: absolute;
+  right: 0;
+}
+.footer-another-social-wrapper{
+  display: -webkit-box;
+  margin-top: 7px;
+}
+.footer-another-social-linklist-item{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.footer-another-social-linklist-item:nth-child(2){
+  margin-left: 20px;
+}
+.footer-another-social-linklist-item img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* mein profile page */
 
 /* profile section */
