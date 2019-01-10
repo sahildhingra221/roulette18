@@ -109,6 +109,27 @@ body {
   border-radius: 4px;
   margin-left: 112px;
   margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section-regbtn a:before{
+  content: " ";
+  position: absolute;
+  background: rgba(255,255,255,0.5);
+  left: -50px;
+  height: 150%;
+  top: -10px;
+  width: 25px;
+  transform: rotate(-25deg);
+  animation: movable 1s infinite;
+}
+@keyframes movable{
+  from{
+    left: -50px;
+  }
+  to {
+    left: 350px;
+  }
 }
 
 .showloginform{
@@ -1083,12 +1104,16 @@ body {
   font-size: 25px;
   color: grey;
   text-align: center;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid grey;
 }
 
 .search-form select {
   padding: 5px;
   font-size: 25px;
   color: grey;
+  border-radius: 6px;
 }
 
 .search-form input[type=submit] {
