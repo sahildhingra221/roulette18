@@ -121,14 +121,14 @@ body {
   top: -10px;
   width: 25px;
   transform: rotate(-25deg);
-  animation: movable 1.8s infinite;
+  animation: movable 3s infinite;
 }
 @keyframes movable{
   from{
-    left: -50px;
+    left: -250px;
   }
   to {
-    left: 350px;
+    left: 450px;
   }
 }
 
