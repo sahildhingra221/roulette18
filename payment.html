@@ -38,10 +38,17 @@
   
   <!-- payment section -->
   <section class="payment-section">
-    <div class="payment-section-wrapper">
+    <div class="payment-section-header">
+      
+      <div class="payment-section-header-bg-opacited"></div>
+     
       <div class="payment-section-tagline">
         Hier hast du mehrere Möglichkeiten um schnell und ganz bequem dein konto aufzuladen. Bei allen angegebenen Bezahlmethoden ist sichergestellt, dadd alles <a href="#">diskret</a>, <a href="#">sicher</a> und <a href="#">garantiert</a> ohne Abo abläuft!
-      </div>
+      </div>  
+      
+    </div>
+    
+    <div class="payment-section-wrapper">
       
       <div class="payment-section-packages">
         <div class="payment-section-packages-title">
@@ -49,14 +56,14 @@
         </div>
         <div class="payment-section-packages-option">
           
-          <div class="package-display">
+          <div tabindex="-1" onfocus="document.getElementById('disp').style.display='block';" onblur="document.getElementById('disp').style.display='none';" class="package-display">
             <div class="package-name">
               PREMIUM PAKET I
             </div>
             <div class="package-specifications">
-              > Unbegrenzt Swipen<br>
-              > Keine Werbung<br>
-              > Nachricht Limit
+              + Unbegrenzt Swipen<br>
+              + Keine Werbung<br>
+              + <span class="font-black">100 Credits</span>
             </div>
             <hr class="packages-hr">
             <div class="package-price">
@@ -64,7 +71,7 @@
             </div>
           </div>
           
-          <div class="package-display has-margin">
+          <div tabindex="-1" onfocus="document.getElementById('disp').style.display='block';" onblur="document.getElementById('disp').style.display='none';" class="package-display has-margin">
             <div class="package-display-popular-tag">
               <p>BELIEBT</p>
             </div>
@@ -72,10 +79,10 @@
               FLAT PAKET II
             </div>
             <div class="package-specifications">
-            > Unbegrenzt Swipen<br>
-            > Keine Werbung<br>
-            > Unbegrenzt Schreiben<br>
-            > Bilder verschicken
+            + Unbegrenzt Swipen<br>
+            + Keine Werbung<br>
+              + <span class="font-black">500 Credits</span><br>
+              + <span class="font-black">Bilder verschicken</span>
             </div>
             <hr class="packages-hr">
             <div class="package-price">
@@ -83,9 +90,29 @@
             </div>
           </div>
           
+          <div tabindex="-1" onfocus="document.getElementById('disp').style.display='block';" onblur="document.getElementById('disp').style.display='none';" class="package-display package-display-vip has-margin">
+            <div class="package-display-popular-tag">
+              <p>VIP</p>
+            </div>
+            <div style="color: white" class="package-name">
+              VIP
+            </div>
+            <div class="package-specifications">
+            + Unbegrenzt Swipen<br>
+            + Keine Werbung<br>
+              <span class="font-orange">+</span> <span class="font-white">Unbegrenzt Schrieben</span><br>
+              <span class="font-orange">+</span> <span class="font-white">Bilder verschicken</span><br>
+              <span class="font-orange">+</span> <span class="font-white">VIP Siegel</span>
+            </div>
+            <hr class="packages-hr">
+            <div style="color: #D7C11D;" class="package-price">
+              3,99 &euro;
+            </div>
+          </div>
+          
         </div>
         
-        <div class="payment-section-payment-options">
+        <div id="disp" style="display: none;" class="payment-section-payment-options">
           <div class="payment-options-tagline">
             zahlungsmethode auswählen
           </div>
