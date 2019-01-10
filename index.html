@@ -85,9 +85,25 @@
                 <img src="media/email.png" alt="e">
               </div>
               <div class="registration-form-input-box">
-                <input type="email" placeholder="E-Mail Adresse">
+                <input id="emailid" onkeyup="checkemail();" type="text" placeholder="E-Mail Adresse">
               </div>
             </div>
+            
+            <span id="errormail" class="errorpass"></span>
+            
+            <script>
+              function checkemail() {
+                var format = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                var emailid = document.getElementById('emailid').value;
+                if(format.test(emailid)) {
+                  document.getElementById('errormail').style.display = 'none';
+                } else {
+                  document.getElementById('errormail').style.display = 'block';
+                  var errorchar = 'Please enter a valid e-mail';
+                  document.getElementById('errormail').innerHTML = errorchar;
+                }
+              }
+            </script>
             
             <div class="registration-form-input has-margin-top">
               <div class="registration-form-input-icon">
@@ -103,9 +119,11 @@
                 <img src="media/password.png" alt="e">
               </div>
               <div class="login-form-input-box">
-                <input id="newpass" type="password" placeholder="Passwort">
+                <input onkeyup="checkenoughchar();" id="newpass" type="password" placeholder="Passwort">
               </div>
             </div>
+            
+            <span id="errorchar" class="errorpass"></span>
             
             <div class="login-form-input has-margin-top">
               <div class="login-form-input-icon">
@@ -119,17 +137,30 @@
             <span id="errorpass" class="errorpass"></span>
             
             <script>
+              function checkenoughchar() {
+                var newpass = document.getElementById('newpass').value;
+                if(newpass.length < 6) {
+                  document.getElementById('errorchar').style.display = 'block';
+                  var errorchar = 'Please enter at least 6 characters.';
+                  document.getElementById('errorchar').innerHTML = errorchar;
+                } else {
+                  document.getElementById('errorchar').style.display = 'none';
+                }
+              }
               function repwd() {
-                document.getElementById('errorpass').style.padding = '10px 15px';
                 var newpass = document.getElementById('newpass').value;
                 var repass = document.getElementById('repass').value;
-                if(newpass != repass) {
+                if(repass.length < 6) {
+                  document.getElementById('errorpass').style.display = 'block';
+                  var errorpass = 'Please enter at least 6 characters.';
+                  document.getElementById('errorpass').innerHTML = errorpass;
+                }
+                else if(newpass != repass) {
+                  document.getElementById('errorpass').style.display = 'block';
                   var errorpass = 'Passwort stimmt nicht überein, bitte bestätigen...';
                   document.getElementById('errorpass').innerHTML = errorpass;
-                  document.getElementById('errorpass').style.background = '#ff0000';
                 } else {
-                  document.getElementById('errorpass').innerHTML = 'Abgeglichen, weiterfahren...';
-                  document.getElementById('errorpass').style.background = '#7FFF00';
+                  document.getElementById('errorpass').style.display = 'none';
                 }
               }
             </script>
