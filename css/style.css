@@ -240,6 +240,15 @@ body {
 .panel-registration{
   padding:30px;
 }
+.cross-btn{
+  outline: none;
+  background: transparent;
+  border: none;
+  float: right;
+  font-size: 30px;
+  display: none;
+  cursor: pointer;
+}
 .panel-registration-tagline{
   font-size: 16px;
   letter-spacing: 1px;

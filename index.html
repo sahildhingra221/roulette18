@@ -107,9 +107,18 @@
         </div>
         
         <div class="tabpanel panel-registration">
-          <button id="closemsg" class="cross-btn">×</button>
+          
+          <button onclick="hidemsg();" id="regmsg" class="cross-btn">×</button>
+          
           <span style="display: none;" id="successregistration" class="succreg">
           </span>
+          
+          <script>
+            function hidemsg() {
+              document.getElementById('successregistration').style.display = 'none';
+              document.getElementById('regmsg').style.display = 'none';
+            }
+          </script>
           
           <div class="panel-registration-tagline">
             Um kostenlose Anzeigen erstellen zu können, registrieren Sie sich bitte
@@ -292,6 +301,7 @@
             
             <script>
               function validateregistration() {
+                document.getElementById('regmsg').style.display = 'block';
                 document.getElementById('successregistration').style.display = 'block';
                 var newpass = document.getElementById('newpass').value;
                 var newpass = document.getElementById('newpass').value;
