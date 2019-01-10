@@ -327,7 +327,7 @@ body {
 }
 
 .registration-form-dob-wrapper{
-  width: 420px;
+  width: 435px;
 }
 
 .registration-form-dob-wrapper input{
@@ -335,6 +335,8 @@ body {
   padding:10px;
   color: grey;
   outline:none;
+  width: 20%;
+  letter-spacing:1px;
 }
 
 .registration-form-dob-wrapper input[type=number]::-webkit-inner-spin-button,
@@ -350,13 +352,22 @@ body {
   font-size: 16px;
   color: grey;
   outline:none;
-}
-.registration-form-dob-wrapper select:nth-child(2){
-}
-.registration-form-dob-wrapper select:nth-child(3){
+  width: 36%;
+  letter-spacing:1px;
 }
 
+.registration-form-gender-wrapper{
+  width: 450px;
+  display: -webkit-box;
+}
 
+.registration-form-gender-elements{
+  width: 33%;
+  color: grey;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: grey
+}
 
 
 
