@@ -103,7 +103,7 @@
                 <img src="media/password.png" alt="e">
               </div>
               <div class="login-form-input-box">
-                <input type="password" placeholder="Passwort">
+                <input id="newpass" type="password" placeholder="Passwort">
               </div>
             </div>
             
@@ -112,9 +112,27 @@
                 <img src="media/password.png" alt="e">
               </div>
               <div class="login-form-input-box">
-                <input type="password" placeholder="passwort Bestätigung">
+                <input id="repass" onkeyup="repwd();" type="password" placeholder="passwort Bestätigung">
               </div>
             </div>
+            
+            <span id="errorpass" class="errorpass"></span>
+            
+            <script>
+              function repwd() {
+                document.getElementById('errorpass').style.padding = '10px 15px';
+                var newpass = document.getElementById('newpass').value;
+                var repass = document.getElementById('repass').value;
+                if(newpass != repass) {
+                  var errorpass = 'Passwort stimmt nicht überein, bitte bestätigen...';
+                  document.getElementById('errorpass').innerHTML = errorpass;
+                  document.getElementById('errorpass').style.background = '#ff0000';
+                } else {
+                  document.getElementById('errorpass').innerHTML = 'Abgeglichen, weiterfahren...';
+                  document.getElementById('errorpass').style.background = '#7FFF00';
+                }
+              }
+            </script>
             
             <div class="login-form-input has-margin-top">
               <div class="registration-form-dob-wrapper">
