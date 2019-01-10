@@ -278,34 +278,9 @@ body {
 .has-margin-top{
   margin: 20px 0 15px;
 }
-.registration-form-forget-password{
-  font-size: 16px;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-.registration-form-forget-password a{
-  color: black;
-  transition: 0.05s ease-in;
-}
-.registration-form-forget-password a:hover{
-  color: #d13248;
-}
 .registration-form-logged-in{
   display: -webkit-box;
   margin-top: 15px;
-}
-.registration-form-remember-me{
-  width: 49.6%;
-  font-size: 16px;
-  font-weight: 400;
-  color: rgba(0,0,0,0.8);
-  letter-spacing: 1px;
-  margin-top: 10px;
-}
-.registration-form-remember-me input[type=checkbox] {
-  float: left;
-  margin-top: 3.5px;
-  margin-right: 7px;
 }
 .registration-form-login-btn{
   width: 49.6%;
@@ -351,6 +326,35 @@ body {
   margin-bottom: 30px;
 }
 
+.registration-form-dob-wrapper{
+  width: 420px;
+}
+
+.registration-form-dob-wrapper input{
+  font-size: 16px;
+  padding:10px;
+  color: grey;
+  outline:none;
+}
+
+.registration-form-dob-wrapper input[type=number]::-webkit-inner-spin-button,
+.registration-form-dob-wrapper input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.registration-form-dob-wrapper select{
+  padding: 12px;
+  font-size: 16px;
+  color: grey;
+  outline:none;
+}
+.registration-form-dob-wrapper select:nth-child(2){
+}
+.registration-form-dob-wrapper select:nth-child(3){
+}
 
 
 
