@@ -730,16 +730,27 @@ body {
   border-radius: 7px;
 }
 
-.find-result-op-likes img {
-  height: 30px;
-  float: left;
-  margin: 0 10px 0 0;
-  opacity: 0.8;
+.hearty {
+    position: absolute;
+    background: url(https://abs.twimg.com/a/1446686284/img/t1/web_heart_animation.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100px;
+    width: 100px;
+    left: -20px;
+    top: -24px;
+}
+
+@-webkit-keyframes play {
+   0% { background-position: 0px 0px; }
+    100% { background-position: -2800px 0px; }
 }
 
 .find-result-op-likes span {
   float: left;
   margin-top: 2.5px;
+  padding-left: 35px;
 }
 
 .find-result-op-options {
@@ -786,6 +797,28 @@ body {
   opacity: 0.9;
   margin-top: 65px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .showchat {
   max-width: 350px !important;
